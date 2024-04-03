@@ -13,5 +13,5 @@ import { MissionDetailsComponent } from './missiondetails/missiondetails.compone
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '101355699-lab-test2-comp3133';
+  title = 'SpaceX';
 }

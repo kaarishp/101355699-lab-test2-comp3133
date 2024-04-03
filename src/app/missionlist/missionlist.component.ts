@@ -42,7 +42,7 @@ export class MissionListComponent implements OnInit {
     if (year) {
       this.missions = this.allMissions.filter(mission => mission.launch_year === year);
     } else {
-      this.missions = [...this.allMissions]; // Reset to all missions if no year is selected
+      this.missions = [...this.allMissions];
     }
   }
 

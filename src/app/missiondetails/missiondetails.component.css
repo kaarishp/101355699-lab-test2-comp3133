@@ -1,11 +1,10 @@
-/* src/app/missiondetails/missiondetails.component.css */
 .mission-details-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Use full screen height to center vertically */
+    min-height: 100vh; 
     padding: 20px;
-    background-color: #e5e5e5; /* Light background for the overall container */
+    background-color: #e5e5e5;
   }
 
 .mission-details-card {
@@ -16,14 +15,14 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center content */
+  text-align: center; 
 }
   
-  .mission-details-card h1 {
-    background-color: #0b3d91; /* Dark blue background */
+.mission-details-card h1 {
+    background-color: #0b3d91; 
     color: #fff;
     padding: 15px 20px;
-    margin: -20px -20px 20px -20px; /* Align background edge to card */
+    margin: -20px -20px 20px -20px; 
     text-align: center;
     font-size: 2em;
     border-top-left-radius: 10px;
@@ -37,7 +36,7 @@
   }
   
   .mission-content h2 {
-    color: #e53935; /* SpaceX red */
+    color: #e53935; 
     margin: 10px 0;
     font-size: 1.5em;
   }
@@ -54,13 +53,13 @@
     margin-top: 15px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #f6f8fa; /* Light grey background for sections */
+    background-color: #f6f8fa;
   }
   
   .rocket-details h3,
   .launch-site-details h3,
   .launch-details h3 {
-    color: #0b3d91; /* Dark blue for section headers */
+    color: #0b3d91; 
     margin-bottom: 5px;
   }
   
@@ -70,7 +69,7 @@
   }
   
   .mission-footer a {
-    color: #0b3d91; /* Dark blue for links */
+    color: #0b3d91; 
     text-decoration: none;
   }
   
@@ -100,25 +99,24 @@
   }
   
   .btn-article {
-    background-color: #ffcc00; /* Article button in yellow */
+    background-color: #ffcc00;
   }
   
   .btn-wiki {
-    background-color: #6a6a6a; /* Wikipedia button in grey */
+    background-color: #6a6a6a;
   }
   
   .btn-youtube {
-    background-color: #ff0000; /* YouTube button in red */
+    background-color: #ff0000;
   }
   
   .btn-youtube:hover {
     background-color: #cc0000;
   }
   
-  /* Responsive design adjustments */
   @media (max-width: 768px) {
     .mission-details-card {
       margin: 20px;
       padding: 10px;
     }
-  }
+}

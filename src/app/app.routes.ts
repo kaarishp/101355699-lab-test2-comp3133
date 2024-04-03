@@ -13,16 +13,14 @@ export const routes: Routes = [
 
 @NgModule({
     declarations: [
-      // ... your components
     ],
     imports: [
       BrowserModule,
       HttpClientModule,
       RouterModule.forRoot(routes),
-      // ... other modules
     ],
     providers: [],
-    bootstrap: [/* your root component */]
+    bootstrap: []
 })
 
 export class AppModule { }

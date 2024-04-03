@@ -63,10 +63,10 @@
   }
   
   .success-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
   }
   
   .failure-button {
-    background-color: #f44336; /* Red */
-  }
+    background-color: #f44336;
+}
   
