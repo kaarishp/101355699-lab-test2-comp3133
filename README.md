@@ -1,27 +1,35 @@
-# 101355699LabTest2Comp3133
+# SpaceX Mission Launch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+This project is a web application that display the launches of SpaceX missions. It utilizes the public SpaceX API to fetch and display information about each mission including the mission name, launch year, mission patch images, and launch success status.
 
-## Development server
+## Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular**: A platform and framework for building client-side single-page web applications using HTML and TypeScript.
+- **SpaceX API**: A RESTful API that provides data on SpaceX launches, rockets, capsules, crew, and more.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Launch Success Filter**: Users can filter missions based on the success of the launch.
+- **Year Selection**: Users can filter missions by the year of launch using a dropdown menu.
+- **Responsive Design**: The application layout adjusts to different screen sizes for an optimal viewing experience on any device.
 
-## Build
+## Preview Images
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Mission Cards](path-to-mission-cards-image.jpg)
+![Launch Filter](path-to-launch-filter-image.jpg)
 
-## Running unit tests
+These images showcase the mission cards layout and the launch success toggle feature of the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Website
 
-## Running end-to-end tests
+Visit the live website here: [SpaceX Mission Launch](https://space-x-roan-theta.vercel.app/missions)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
+Distributed under the MIT License. See `LICENSE` for more information.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contact
+
+Your Name - [Kaarish Parameswaran](kaarishsivaguru@gmail.com)
+
+Project Link: [https://github.com/kaarishp/101355699-lab-test2-comp3133](https://github.com/kaarishp/101355699-lab-test2-comp3133)
