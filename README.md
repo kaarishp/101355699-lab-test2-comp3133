@@ -16,7 +16,6 @@ This project is a web application that display the launches of SpaceX missions. 
 ## Preview Images
 
 ![Mission Launch Page](/launch_page.png)
-![Mission Details](/mission_details.png)
 
 These images showcase the mission cards layout and the launch success toggle feature of the application.
 
