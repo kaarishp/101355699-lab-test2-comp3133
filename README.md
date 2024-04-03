@@ -29,6 +29,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Email: [Kaarish Parameswaran](kaarishsivaguru@gmail.com)
+Email: [Kaarish Parameswaran](mailto:kaarishsivaguru@gmail.com)
 
 Project Link: [SpaceX Launch Github Repo](https://github.com/kaarishp/101355699-lab-test2-comp3133)
