@@ -1,4 +1,9 @@
 <div class="mission-list">
+    <select #yearSelect (change)="onYearChange(yearSelect.value)">
+        <option value="">Select Year</option>
+        <option *ngFor="let year of availableYears" [value]="year">{{ year }}</option>
+      </select>
+
     <h1>SpaceX Mission Launch List</h1>
     <div *ngFor="let mission of missions" class="mission-card">
       <div class="mission-header">
