@@ -5,5 +5,6 @@ export interface Mission {
     links: {
       mission_patch_small: string;
     };
+    
   }
   

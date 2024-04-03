@@ -45,3 +45,28 @@
     padding-top: 15px;
 }
   
+.filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .success-button,
+  .failure-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .success-button {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .failure-button {
+    background-color: #f44336; /* Red */
+  }
+  

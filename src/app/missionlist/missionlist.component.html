@@ -1,9 +1,17 @@
 <div class="mission-list">
+    <!-- Section for filtering by launch success -->
+    <div class="filter-section">
+      <h2>Successful Launch</h2>
+      <button (click)="filterLaunches(true)" class="success-button">true</button>
+      <button (click)="filterLaunches(false)" class="failure-button">false</button>
+    </div>
+  
+    <!-- Dropdown for year selection -->
     <select #yearSelect (change)="onYearChange(yearSelect.value)">
-        <option value="">Select Year</option>
-        <option *ngFor="let year of availableYears" [value]="year">{{ year }}</option>
-      </select>
-
+      <option value="">Select Year</option>
+      <option *ngFor="let year of availableYears" [value]="year">{{ year }}</option>
+    </select>
+  
     <h1>SpaceX Mission Launch List</h1>
     <div *ngFor="let mission of missions" class="mission-card">
       <div class="mission-header">
@@ -11,6 +19,8 @@
         <div class="mission-info">
           <h2>{{ mission.mission_name }}</h2>
           <p class="launch-year">{{ mission.launch_year }}</p>
+          <!-- Display launch success status -->
+          <p class="launch-success">Launch Success: {{ mission.launch_success ? 'Yes' : 'No' }}</p>
         </div>
       </div>
       <p class="mission-details">{{ mission.details || 'No details available' }}</p>

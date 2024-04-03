@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MissionListComponent implements OnInit {
   missions: any[] = [];
+  allMissions: any[] = [];
   availableYears: string[] = [
     '2006', '2007', '2008', '2009', '2010', 
     '2011', '2012', '2013', '2014', '2015', 
@@ -29,20 +30,30 @@ export class MissionListComponent implements OnInit {
 
   getLaunches(): void {
     this.spaceXApiService.getLaunches().subscribe(
-      data => this.missions = data,
+      data => {
+        this.allMissions = data;
+        this.missions = data;
+      },
       error => console.error(error)
     );
   }
 
   updateLaunchesByYear(year: string): void {
-    this.spaceXApiService.getLaunchesByYear(year).subscribe(
-      data => this.missions = data,
-      error => console.error(error)
-    );
+    if (year) {
+      this.missions = this.allMissions.filter(mission => mission.launch_year === year);
+    } else {
+      this.missions = [...this.allMissions]; // Reset to all missions if no year is selected
+    }
   }
 
   onYearChange(newYear: string): void {
     this.selectedYear = newYear;
     this.updateLaunchesByYear(newYear);
   }
+
+  filterLaunches(isSuccessful: boolean): void {
+    this.missions = this.allMissions.filter(mission => mission.launch_success === isSuccessful);
+  }
+  
+  
 }
