@@ -23,4 +23,8 @@ export class SpaceXApiService {
       })
     );
   }
+
+  getLaunchDetails(flightNumber: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${flightNumber}`);
+  }
 }

@@ -1,0 +1,124 @@
+/* src/app/missiondetails/missiondetails.component.css */
+.mission-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use full screen height to center vertically */
+    padding: 20px;
+    background-color: #e5e5e5; /* Light background for the overall container */
+  }
+
+.mission-details-card {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center content */
+}
+  
+  .mission-details-card h1 {
+    background-color: #0b3d91; /* Dark blue background */
+    color: #fff;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px; /* Align background edge to card */
+    text-align: center;
+    font-size: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .mission-content img.mission-patch {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .mission-content h2 {
+    color: #e53935; /* SpaceX red */
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .mission-content > p {
+    color: #333;
+    font-size: 1.1em;
+  }
+  
+  .rocket-details,
+  .launch-site-details,
+  .launch-details,
+  .mission-footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f6f8fa; /* Light grey background for sections */
+  }
+  
+  .rocket-details h3,
+  .launch-site-details h3,
+  .launch-details h3 {
+    color: #0b3d91; /* Dark blue for section headers */
+    margin-bottom: 5px;
+  }
+  
+  .mission-footer p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .mission-footer a {
+    color: #0b3d91; /* Dark blue for links */
+    text-decoration: none;
+  }
+  
+  .mission-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .link-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0b3d91;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #09407d;
+  }
+  
+  .btn-article {
+    background-color: #ffcc00; /* Article button in yellow */
+  }
+  
+  .btn-wiki {
+    background-color: #6a6a6a; /* Wikipedia button in grey */
+  }
+  
+  .btn-youtube {
+    background-color: #ff0000; /* YouTube button in red */
+  }
+  
+  .btn-youtube:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .mission-details-card {
+      margin: 20px;
+      padding: 10px;
+    }
+  }

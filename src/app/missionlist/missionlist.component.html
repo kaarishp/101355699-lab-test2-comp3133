@@ -13,7 +13,7 @@
     </select>
   
     <h1>SpaceX Mission Launch List</h1>
-    <div *ngFor="let mission of missions" class="mission-card">
+    <div *ngFor="let mission of missions" class="mission-card" (click)="selectMission(mission.flight_number)">
       <div class="mission-header">
         <img [src]="mission.links.mission_patch_small" alt="Mission Patch" class="mission-patch">
         <div class="mission-info">
