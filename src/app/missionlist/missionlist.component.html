@@ -1,1 +1,14 @@
-<p>missionlist works!</p>
+<!-- missionlist.component.html -->
+<div class="mission-list">
+    <h1>SpaceX Mission Launch List</h1>
+    <div *ngFor="let mission of missions" class="mission-card">
+      <div class="mission-header">
+        <img [src]="mission.links.mission_patch_small" alt="Mission Patch" class="mission-patch">
+        <div class="mission-info">
+          <h2>{{ mission.mission_name }}</h2>
+          <p class="launch-year">{{ mission.launch_year }}</p>
+        </div>
+      </div>
+      <p class="mission-details">{{ mission.details || 'No details available' }}</p>
+    </div>
+  </div>

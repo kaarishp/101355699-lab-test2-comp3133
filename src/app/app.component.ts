@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { MissionListComponent } from './missionlist/missionlist.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink, HttpClientModule, MissionListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
