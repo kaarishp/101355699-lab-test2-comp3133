@@ -15,8 +15,8 @@ This project is a web application that display the launches of SpaceX missions. 
 
 ## Preview Images
 
-![Mission Cards](path-to-mission-cards-image.jpg)
-![Launch Filter](path-to-launch-filter-image.jpg)
+![Mission Launch Page](/launch_page.png)
+![Mission Details](/mission_details.png)
 
 These images showcase the mission cards layout and the launch success toggle feature of the application.
 
@@ -30,6 +30,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [Kaarish Parameswaran](kaarishsivaguru@gmail.com)
+Email: [Kaarish Parameswaran](kaarishsivaguru@gmail.com)
 
-Project Link: [https://github.com/kaarishp/101355699-lab-test2-comp3133](https://github.com/kaarishp/101355699-lab-test2-comp3133)
+Project Link: [SpaceX Launch Github Repo](https://github.com/kaarishp/101355699-lab-test2-comp3133)
