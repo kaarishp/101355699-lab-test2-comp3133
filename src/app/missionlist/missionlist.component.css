@@ -1,72 +1,117 @@
-.mission-list {
+.container {
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .header,
+  .footer {
+    text-align: center;
+  }
+  
+  .mission-list {
     margin: auto;
     padding: 10px;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
   
-.mission-card {
-    background: #0ec7f5;
+  .mission-card {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #eeeeee;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-}
+    margin-bottom: 20px;
+  }
   
-.mission-header {
+  .mission-card:hover {
+    background-color: #cdcccc;
+  }
+  
+  .mission-header {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-}
-  
-.mission-patch {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-}
-  
-.mission-info {
-    flex-grow: 1;
-}
-  
-.mission-info h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #000000;
-}
-  
-.launch-year {
-    font-size: 0.9em;
-    color: #000000;
-}
-  
-.mission-details {
-    font-size: 0.9em;
-    color: #333;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-}
-  
-.filter-section {
-    margin-bottom: 20px;
+    width: 100%;
   }
   
-  .filter-section h2 {
+  .mission-patch {
+    max-width: 30%;
+    height: auto;
     margin-bottom: 10px;
   }
   
-  .success-button,
-  .failure-button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    color: white;
+  .mission-info {
+    flex-grow: 1;
+  }
+  
+  .mission-info h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  
+  .launch-year {
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .mission-details {
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #5c5b5b;
+    padding-top: 15px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    min-height: 20px;
+  }
+  
+  .year-select {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="%23000000"><polygon points="6,9 12,15 18,9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
     cursor: pointer;
+    width: 10%;
+    margin-bottom: 40px;
   }
   
-  .success-button {
-    background-color: #4CAF50; 
+  .year-select:focus {
+    outline: none;
+    border-color: #555;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
   }
   
-  .failure-button {
-    background-color: #f44336;
-}
+  @media (max-width: 768px) {
+    .mission-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .year-select {
+        width: 30%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mission-list {
+      grid-template-columns: 1fr;
+    }
+  }
   
