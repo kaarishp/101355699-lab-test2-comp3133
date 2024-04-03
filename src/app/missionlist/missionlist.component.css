@@ -1,45 +1,44 @@
-/* missionlist.component.css */
 .mission-list {
-    max-width: 600px;
     margin: auto;
-  }
+    padding: 10px;
+}
   
-  .mission-card {
-    background: #fff;
+.mission-card {
+    background: #0ec7f5;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 15px;
-  }
+}
   
-  .mission-header {
+.mission-header {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-  }
+}
   
-  .mission-patch {
+.mission-patch {
     width: 50px;
     height: 50px;
     margin-right: 15px;
-  }
+}
   
-  .mission-info {
+.mission-info {
     flex-grow: 1;
-  }
+}
   
-  .mission-info h2 {
+.mission-info h2 {
     margin: 0;
     font-size: 1.5em;
-    color: #333;
-  }
+    color: #000000;
+}
   
-  .launch-year {
+.launch-year {
     font-size: 0.9em;
-    color: #666;
-  }
+    color: #000000;
+}
   
-  .mission-details {
+.mission-details {
     font-size: 0.9em;
     color: #333;
     border-top: 1px solid #eee;
